@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+RapidRescue: AI-Enhanced Hospital Selection Based
+on Patient Emergency Calls
 
-## Getting Started
+PROBLEM
+Current systems fail to provide real-time, intelligent support
+for ambulance drivers to select the most suitable hospital
+based on occupancy, specialty, and support resources, leading
+to potential delays and inefficiencies. An advanced,
+responsive solution is needed to optimize hospital selection
+and improve patient outcomes.
 
-First, run the development server:
+SOLUTION
+Implement a real-time Hospital Selection System that
+integrates live data on hospital occupancy, specialties, and
+support resources. This system should use intelligent
+algorithms to recommend the most suitable hospital for each
+patient and provide ambulance drivers with optimized routing
+and up-to-date information
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+TECHNOLOGY STACK
+• Next JS (Development framework)
+o Tailwind CSS(Styling)
+o Google Firebase(Real Time Database)
+o Node JS(Server Side Operations)
+• MapBox API(Using Map Functionalities)
+• Web Speech API (Voice to Text Translation)
+• Gemini Ai(Best Hospital Selection)
+• Geolocation API(To find ambulance location)
+• Harversine Formula (used for finding distance btw two
+coordinates)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+APIS, Assests & Libraries
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+• MapBox API-It enhances hospital services by providing
+optimized routing and geographic data. The Directions
+API helps ambulances find the shortest, fastest routes,
+considering real-time traffic for efficient rerouting. The
+Geocoding API identifies nearby hospitals, converting
+addresses to coordinates. This integration supports quick
+location of medical facilities and improves emergency
+response through interactive map visualization and route
+optimization.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+• Web Speech API-It enables voice-to-text translation,
+allowing users to convert spoken words into written text
+in real-time. It includes the SpeechRecognition interfacefor recognizing and transcribing speech, supporting
+continuous listening and interim results. This API is
+useful for applications that require voice input,
+enhancing user accessibility and interaction. By
+integrating Web Speech API.
 
-## Learn More
+• Gemini AI-It provides advanced algorithms for selecting
+the best hospital based on various criteria. By analyzing
+data such as hospital ratings, specialties, location, and
+patient reviews, Gemini AI helps users identify the most
+suitable healthcare facilities. It leverages machine
+learning to offer personalized recommendations,
+ensuring that users find hospitals with the best quality of
+care and relevant medical expertise for their needs.
 
-To learn more about Next.js, take a look at the following resources:
+• Geolocation API-It allows web applications to pinpoint
+the exact location of an ambulance in real-time. By
+retrieving the device's latitude and longitude
+coordinates, it facilitates accurate tracking and
+monitoring of the ambulance's position. This capability is
+crucial for coordinating emergency responses, optimizing
+routes, and providing timely updates on the ambulance’s
+arrival, thereby improving the efficiency and
+effectiveness of emergency medical services.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+INSTRUCTIONS FOR USE
+o Type/Speak the symptoms you are sufferingo Hit the search button, The shortest location for
+treatment will be shown
+o The facilities in the hospital like bed availability, icu
+availibity details can be updated in the hospital
+dashboard by the authorised hospital staffs during
+real time.
