@@ -7,8 +7,7 @@ import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-direct
 import { HospitalContext } from "@/context/hospitalContext";
 import Image from "next/image";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiYWJoaW4yazMiLCJhIjoiY20wbWh5ZHFwMDJwcjJqcHVjM3kyZjZlNyJ9.cagUWYMuMzLdJQhMbYB50A";
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API;
 
 const Map = ({ directedHospital, setDirectedHospital }) => {
   const { hospitals } = useContext(HospitalContext);

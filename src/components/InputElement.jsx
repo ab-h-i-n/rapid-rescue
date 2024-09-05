@@ -24,7 +24,7 @@ function InputElement({
     setLoading(true);
 
     const genAI = new GoogleGenerativeAI(
-      "AIzaSyDG9CGRLqrJl-zTW8fBf8Jif3F7Fw9NDm8"
+      process.env.NEXT_PUBLIC_GEMINI_API
     );
 
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });

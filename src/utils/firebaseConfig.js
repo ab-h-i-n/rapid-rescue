@@ -3,15 +3,14 @@ import { getDatabase, ref, set } from "firebase/database";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAVFVSUmGtQaBo_dQ9PpnVCFO2nIwdUdCc",
-  authDomain: "rapid-rescue-35215.firebaseapp.com",
-  databaseURL:
-    "https://rapid-rescue-35215-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "rapid-rescue-35215",
-  storageBucket: "rapid-rescue-35215.appspot.com",
-  messagingSenderId: "11805308867",
-  appId: "1:11805308867:web:7c5c9b00b655b824acef76",
-  measurementId: "G-70PJZS32ZR",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API,
+  authDomain: NEXT_PUBLIC_FIREBASE_DOMAIN,
+  databaseURL: NEXT_PUBLIC_FIREBASE_DB,
+  projectId: NEXT_PUBLIC_PROJ_ID,
+  storageBucket: NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: NEXT_PUBLIC_MSG_SENDER_ID,
+  appId: NEXT_PUBLIC_APP_ID,
+  measurementId: NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

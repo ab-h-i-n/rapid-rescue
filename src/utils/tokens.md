@@ -1,5 +1,0 @@
-Mapbox 1 : pk.eyJ1IjoiYWJoaW4yazMiLCJhIjoiY20wbWh5ZHFwMDJwcjJqcHVjM3kyZjZlNyJ9.cagUWYMuMzLdJQhMbYB50A
-Mapbox 2 : pk.eyJ1IjoiYjBybi1zbHl0aGVyaW4iLCJhIjoiY20wbDZ3NmVuMDJkdzJtcXlubWdrMmVkMyJ9.iTnPcb-yrYGlbB7C_L45SQ
-
-Gemini 1 : AIzaSyDG9CGRLqrJl-zTW8fBf8Jif3F7Fw9NDm8
-Gemini 2 : AIzaSyCup4ahSsgVkpxWk3h9wA4qMOuxaGo2ICo
