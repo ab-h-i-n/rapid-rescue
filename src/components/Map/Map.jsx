@@ -144,9 +144,9 @@ const Map = ({ directedHospital, setDirectedHospital }) => {
       {distance && duration && (
         <div className="animate fixed bottom-0 z-[999] flex justify-center w-screen">
           {/* details container  */}
-          <div className="bg-white flex items-center justify-between text-black px-10 py-5 w-screen rounded-xl shadow-xl shadow-black">
-            {/* name  */}
-            <p className="text-lg flex flex-col h-fit">
+          <div className="bg-white md:flex md:items-center md:justify-between text-black px-10 py-5 w-screen rounded-xl shadow-xl shadow-black">
+            {/* name and other details  */}
+            <p className="md:text-lg flex flex-col h-fit">
               <Image
                 src={"/images/hospital.svg"}
                 alt="hosp"
@@ -154,21 +154,23 @@ const Map = ({ directedHospital, setDirectedHospital }) => {
                 height={50}
               />
               {/* name  */}
-              <span className="text-2xl font-semibold capitalize mt-5">
+              <span className="md:text-2xl font-semibold capitalize mt-5">
                 {directedHospital?.name}
               </span>
               {/* phone  */}
-              <span className="text-lg text-black/50 font-semibold capitalize mt-2">
+              <span className="md:text-lg text-black/50 font-semibold capitalize mt-2">
                 {directedHospital?.phoneNumber}
               </span>
               {/* facilities  */}
-              <span className="text-lg text-black/50 font-semibold capitalize mt-2 max-w-[80%]">
+              <span className="text-xs md:text-lg text-black/50 font-semibold capitalize mt-2 max-w-[80%]">
               Facilities Provided : 
                 {Array.isArray(directedHospital?.facilities) ? directedHospital?.facilities.join(', ') + ", " : null}
                 {Array.isArray(directedHospital?.medical_specialities) ? directedHospital?.medical_specialities.join(', ') : null}
               </span>
             </p>
-            <div className="flex items-center gap-10">
+
+            {/* distacne and time  */}
+            <div className="flex items-center gap-10 py-5">
               {/* distance  */}
               <p className="flex items-center gap-2 flex-nowrap text-nowrap">
                 <Image
@@ -176,8 +178,9 @@ const Map = ({ directedHospital, setDirectedHospital }) => {
                   alt="hosp"
                   width={40}
                   height={40}
+                  className="aspect-square w-[30px] md:w-[40px]"
                 />
-                <span className="font-medium text-lg">
+                <span className="font-medium md:text-lg">
                   {distance.toFixed(2)} km
                 </span>
               </p>
@@ -188,8 +191,9 @@ const Map = ({ directedHospital, setDirectedHospital }) => {
                   alt="hosp"
                   width={30}
                   height={30}
+                  className="aspect-square w-[20px] md:w-[30px]"
                 />
-                <span className="font-medium text-lg">
+                <span className="font-medium md:text-lg">
                   {duration.toFixed(2)} minutes
                 </span>
               </p>
