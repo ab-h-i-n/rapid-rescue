@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mapboxgl-ctrl-directions{
+    display: none;
+}
+
+.animate{
+    animation: fade-up 1s forwards;
+}
+
+@keyframes fade-up {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
